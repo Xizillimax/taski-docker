@@ -23,7 +23,6 @@ services:
     build: ./frontend/
   gateway:
     build: ./gateway/
-    # А тут подключаем volume со статикой к gateway
     volumes:
       - static:/staticfiles/
     ports:
